@@ -22,11 +22,11 @@ public class Main {
             action = '/';
 
         }else{
-            throw new Exception("Некорректный знак действия");
+            throw new Exception("Неправильный знак действия");
         }
 
         if (action == '*' || action == '/') {
-            if (data[1].contains("\"")) throw new Exception("Строчку можно делить или умножать только на число");
+            if (data[1].contains("\"")) throw new Exception("/ и * только на число. ");
         }
         for (int i = 0; i < data.length; i++) {
             data[i] = data[i].replace("\"", "");
